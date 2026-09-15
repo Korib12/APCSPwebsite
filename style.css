@@ -1,0 +1,129 @@
+h1{
+    font-style: italic;
+}
+
+.myNav.soft-blue-gradient {
+  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
+  background-color: #b3d9ff; 
+ 
+}
+
+.parallax h1,
+.parallax_bio h1{
+  color: #1b365d;
+  
+  font-size: clamp(2rem, 1rem + 6vw, 6rem);
+  margin-top: 0;
+  padding-top: 40px;
+  padding-left: 50px;
+  margin-right: 200px;
+   
+}
+.myNav.navbar-inverse .navbar-brand,
+.myNav.navbar-inverse .navbar-nav > li > a {
+    color: #000000;
+}
+.parallax h3, 
+.parrallax_bio h3{
+color: #1b365d;
+  font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+  margin-top: 0.5rem; 
+  padding-left:50px;
+  font-weight: 400;    
+}
+
+
+.myNav .navbar-nav > .active > a {
+  background-color: #1b365d !important; 
+  color: #ffffff !important;           
+}
+.myNav .dropdown-menu > .active > a {
+  background-color: #1b365d !important; 
+  color: #ffffff !important;           
+}
+.dropdown-menu .li{
+    background-color:b3d9ff ;
+}
+.parallax {
+  /* The image used */
+  background-image: url("https://www.trafalgar.com/real-word/wp-content/uploads//2018/01/Tokyo-Skyline-www.istockphoto.com_gb_photo_tokyo-japan-city-skyline-gm504317383-44289846-SeanPavonePhoto.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.bottom-footer {
+  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
+  background-color: #b3d9ff;  
+  padding: 20px 0;           
+  margin-top: 40px;         
+}
+.parallax_bio {
+  /* The image used */
+  background-image: url("https://img.magnific.com/free-photo/blue-stationery-table_23-2148169490.jpg?semt=ais_hybrid&w=740&q=80");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.bottom-footer {
+  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
+  background-color: #b3d9ff;  
+  padding: 20px 0;           
+  margin-top: 40px;         
+}
+
+.myNav.navbar-inverse .navbar-nav > li > a:hover,
+.myNav.navbar-inverse .navbar-nav > li > a:focus,
+.myNav.navbar-inverse .navbar-nav > .open > a,
+.myNav.navbar-inverse .navbar-nav > .open > a:hover,
+.myNav.navbar-inverse .navbar-nav > .open > a:focus,
+.myNav .dropdown-menu > .active > a,
+.myNav .dropdown-menu > li > a:hover,
+.myNav .dropdown-menu > li > a:focus {
+    background-color: #7fb5ff;
+    color: #ffffff !important;
+}
+
+.myNav .dropdown-menu {
+    background-color: #b3d9ff !important;
+}
+body{
+    background-color: #FBF9F6 
+}
+.body p{
+    
+}
+/* Target screens smaller than or equal to 768px (Mobile/Tablets) */
+@media screen and (width <= 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+/* Target screens larger than or equal to 1024px (Desktops) */
+@media screen and (width >= 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Target a specific range (Between 600px and 1000px) */
+@media screen and (600px <= width <= 1000px) {
+  .sidebar {
+    display: block;
+  }
+}
