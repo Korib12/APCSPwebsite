@@ -58,7 +58,7 @@ color: #1b365d;
   min-height: 500px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +79,7 @@ color: #1b365d;
   min-height: 500px;
 
   /* Create the parallax  effect */
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
