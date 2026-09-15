@@ -7,9 +7,15 @@ h1{
   background-color: #b3d9ff; 
  
 }
-
-.parallax h1,
 .parallax_bio h1{
+    font-size: clamp(2rem, 1rem + 6vw, 6rem);
+    color:white !important;
+    padding-top:100px !important;
+    text-align: center !important;
+    margin-right:30px;
+    margin-left:30px;
+}
+.parallax h1,{
   color: #1b365d;
   
   font-size: clamp(2rem, 1rem + 6vw, 6rem);
