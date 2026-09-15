@@ -10,7 +10,23 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+  <style>
+  /* Keeps the floating border strictly limited to the parallax section container */
+  .parallax_bio {
+    position: relative; 
+  }
+
+  /* Creates the floating outline inside your picture */
+  .parallax-frame {
+    position: absolute;
+    inset: 24px;              /* Pulls the box 24px away from the image edges */
+    border: 15px solid #ffffff; /* Thickness of the white line */
+    border-radius: 25px;       /* Rounds the corners */
+    box-sizing: border-box; 
+    pointer-events: none;      /* Prevents the border layer from blocking mouse clicks */
+  }
+</style>
+
 </head>
 <body>
 
@@ -42,9 +58,11 @@
   </div>
 </nav>
 <div class="parallax_bio">
-        <h1 class=text-left>ALL ABOUT ME!</h1>
+     <div class="parallax-frame">
+        <h1>ALL ABOUT ME!</h1>
         
     </div>
+    </div> 
     <div class="container" style="margin-top: 50px; margin-bottom: 500px;">
         <h3>Collapsible Navbar</h3>
         <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner.</p>
