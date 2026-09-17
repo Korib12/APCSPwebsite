@@ -10,6 +10,26 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+  /* Keeps the floating border strictly limited to the parallax section container */
+  .parallax_projects {
+    position: relative; 
+  }
+
+  /* Creates the floating outline inside your picture */
+  .parallax-frame {
+    position: absolute;
+    inset: 24px;              /* Pulls the box 24px away from the image edges */
+    border: 15px solid #ffffff; /* Thickness of the white line */
+    border-radius: 25px;       /* Rounds the corners */
+    box-sizing: border-box; 
+    pointer-events: none;      /* Prevents the border layer from blocking mouse clicks */
+  }
+  .body {
+    font-family: 'Poppins', sans-serif;
+      
+  }
+  </style>
 </head>
 <body>
  
@@ -40,17 +60,106 @@
     </div>
   </div>
 </nav>
-
+<div class="parallax_projects">
+     <div class="parallax-frame">
+        <h1><strong>What I Have Created!</strong></h1>
+        
+    </div>
+    </div>
   
 <div class="container">
-  <h3>Collapsible Navbar</h3>
-  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+  <h2>Projects</h2>
+  <hr>
+ 
+
+
+<div class="container">
+  
+  
+  <div class="container">
+
+  <div class="row" style="border-bottom: 1px solid #888b8d; padding-top: 15px; padding-bottom: 15px;">
+    
+    
+    <div class="col-xs-4" width:100%>
+      <img src="https://thumbs.dreamstime.com/b/word-tbd-wood-building-blocks-financial-charts-252974848.jpg"  class="img-responsive img-rounded" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;">
+    </div>
+    
+    
+    <div class="col-xs-8">
+      <h4 style="margin-top: 0; margin-bottom: 5px; font-weight: bold;">Project Title 1</h4>
+      <p class="text-muted" style="margin-bottom: 0;">This is your project description. It will automatically shrink and wrap beautifully on smaller phone screens without breaking the layout.</p>
+    </div>
+
+  </div>
+  <div class="row" style="border-bottom: 1px solid #888b8d; padding-top: 15px; padding-bottom: 15px;">
+    
+    
+    <div class="col-xs-4">
+      <img src="https://thumbs.dreamstime.com/b/word-tbd-wood-building-blocks-financial-charts-252974848.jpg"  class="img-responsive img-rounded" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;">
+    </div>
+    
+    
+    <div class="col-xs-8">
+      <h4 style="margin-top: 0; margin-bottom: 5px; font-weight: bold;">Project Title 2</h4>
+      <p class="text-muted" style="margin-bottom: 0;">This is your project description. It will automatically shrink and wrap beautifully on smaller phone screens without breaking the layout.</p>
+    </div>
+
+  </div>
+  <div class="row" style="border-bottom: 1px solid #888b8d; padding-top: 15px; padding-bottom: 15px;">
+    
+    
+    <div class="col-xs-4" width:100%>
+      <img src="https://thumbs.dreamstime.com/b/word-tbd-wood-building-blocks-financial-charts-252974848.jpg"  class="img-responsive img-rounded" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;">
+    </div>
+    
+    
+    <div class="col-xs-8">
+      <h4 style="margin-top: 0; margin-bottom: 5px; font-weight: bold;">Project Title 3</h4>
+      <p class="text-muted" style="margin-bottom: 0;">This is your project description. It will automatically shrink and wrap beautifully on smaller phone screens without breaking the layout.</p>
+    </div>
+
+  </div>
+  <div class="row" style="border-bottom: 1px solid #888b8d; padding-top: 15px; padding-bottom: 15px;">
+    
+    
+    <div class="col-xs-4" width:100%>
+      <img src="https://thumbs.dreamstime.com/b/word-tbd-wood-building-blocks-financial-charts-252974848.jpg"  class="img-responsive img-rounded" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;">
+    </div>
+    
+    
+    <div class="col-xs-8">
+      <h4 style="margin-top: 0; margin-bottom: 5px; font-weight: bold;">Project Title 4</h4>
+      <p class="text-muted" style="margin-bottom: 0;">This is your project description. It will automatically shrink and wrap beautifully on smaller phone screens without breaking the layout.</p>
+    </div>
+
+  </div>
+  <div class="row" style="border-bottom: 1px solid #888b8d; padding-top: 15px; padding-bottom: 15px;">
+    
+    
+    <div class="col-xs-4" width:100%>
+      <img src="https://thumbs.dreamstime.com/b/word-tbd-wood-building-blocks-financial-charts-252974848.jpg"  class="img-responsive img-rounded" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;">
+    </div>
+    
+    
+    <div class="col-xs-8">
+      <h4 style="margin-top: 0; margin-bottom: 5px; font-weight: bold;">Project Title 5</h4>
+      <p class="text-muted" style="margin-bottom: 0;">This is your project description. It will automatically shrink and wrap beautifully on smaller phone screens without breaking the layout.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+</div>
+
 </div>
 <footer class="bottom-footer">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center">
+          <p class="copyright-text">Created By Kori, <a href="mailto:koribui7@gmail.com">Contact Me  </a> <i class ="bi bi-envelope"></i>  or <a href = "https://granadahigh.livermoreschools.org/">Go To My School</a></p>
         <p class="copyright-text">&copy; 2026 Me. Imitation is the highest form of flattery, but copying my code is just lazy.</p>
       </div>
     </div>
