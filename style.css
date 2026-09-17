@@ -1,13 +1,18 @@
 h1{
     font-style: italic;
 }
-
+hr {
+  border: 0;
+  border-top: 1px solid #1e3a8a; 
+  margin: 20px 0;                
+}
 .myNav.soft-blue-gradient {
   background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
   background-color: #b3d9ff; 
  
 }
-.parallax_bio h1{
+.parallax_bio h1,
+.parallax_projects h1{
     font-size: clamp(2rem, 1rem + 6vw, 6rem);
     color:white !important;
     padding-top:100px !important;
@@ -30,7 +35,8 @@ h1{
     color: #000000;
 }
 .parallax h3, 
-.parrallax_bio h3{
+.parrallax_bio h3,
+.parralax_projects h3{
 color: #1b365d;
   font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
   margin-top: 0.5rem; 
@@ -55,7 +61,7 @@ color: #1b365d;
   background-image: url("https://www.trafalgar.com/real-word/wp-content/uploads//2018/01/Tokyo-Skyline-www.istockphoto.com_gb_photo_tokyo-japan-city-skyline-gm504317383-44289846-SeanPavonePhoto.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 800px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -91,9 +97,28 @@ color: #1b365d;
   padding: 20px 0;           
   margin-top: 40px;         
 }
+.parallax_projects {
+  /* The image used */
+  background-image: url("https://t3.ftcdn.net/jpg/04/74/49/80/360_F_474498018_agehf1VrGjAjlUvH938wXYT1NQ2VVkBL.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax  effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.bottom-footer {
+  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
+  background-color: #b3d9ff;  
+  padding: 20px 0;           
+  margin-top: 40px;         
+}
 
 .myNav.navbar-inverse .navbar-nav > li > a:hover,
-.myNav.navbar-inverse .navbar-nav > li > a:focus,
 .myNav.navbar-inverse .navbar-nav > .open > a,
 .myNav.navbar-inverse .navbar-nav > .open > a:hover,
 .myNav.navbar-inverse .navbar-nav > .open > a:focus,
@@ -149,4 +174,10 @@ body{
     object-fit: cover;    
     border-radius: 16px;  
    
+}
+
+
+.interests-image-wrapper:hover img {
+  transform: scale(1.15);
+  border-radius: 16px; 
 }
