@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 <head>
+    <head>
+ 
+  
+
   <title>Kori's Website | Home</title>
   <meta charset="utf-8">
   <link rel="icon" type="image/png" href="https://codehs.com/uploads/3c2c957ea691e31f2a3bf42e1557e6ff">
@@ -13,8 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
- 
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;"> 
 
 <nav class="myNav navbar-inverse soft-blue-gradient">
   <div class="container-fluid">
@@ -38,7 +41,9 @@
         </li>
         <li><a href="projects.html"><i class ="bi-briefcase"></i> Projects</a></li>
         
-      </ul>
+      
+      
+
     </div>
   </div>
 </nav>
@@ -47,28 +52,32 @@
         <h1 class=text-left>Welcome!</h1>
         <h3>Get ready to learn everything about me!</h3>
     </div>
-    <div class="container" style="margin-top: 50px; margin-bottom: 500px;">
-        <h3>Collapsible Navbar</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner.</p>
-        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+    
+
+<div class="container" style="margin-top: 50px; margin-bottom: 50px; flex-grow: 1;">
+    
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0; margin-top: 30px;"> 
+      <div class="row" style="display: flex; align-items: center; flex-wrap: wrap; border-bottom: 1px solid #888b8d; padding-top: 30px; padding-bottom: 30px; min-height: 300px;"> 
         
-        <!-- Added placeholder blocks to guarantee scrolling capability -->
-        <hr>
-        <h3>Scroll down to see the effect!</h3>
-        <p style="line-height: 3;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elite.<br>
-            Keep scrolling down...<br>
-            The picture above stays fixed while this text rolls right over it!<br>
-            Keep scrolling...<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <div style="flex: 1 1 300px; padding: 15px; max-width: 100%;"> 
+          <img src="https://codehs.com/uploads/11327526853d0861754895dee09bc85d" class="img-responsive img-rounded" style="width: 100%; height: 100%; max-height: 700px; object-fit: cover;"> 
+        </div> 
+        
+        <div style="flex: 2 1 350px; padding: 15px 30px;"> 
+          <h4 style="margin-top: 0; margin-bottom: 15px; font-weight: bold; font-size: 24px;">Kori Bui</h4> 
+          <p style= "line-height: 1.8;">This is all about me.</p> 
+        </div> 
+        
+      </div> 
     </div>
+</div>
+ 
   
-<footer class="bottom-footer">
+<footer class="bottom-footer" style="flex-shrink: 0;">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center">
-          <p class="copyright-text">Created By Kori, <a href="mailto:koribui7@gmail.com">Contact Me  </a> <i class ="bi bi-envelope"></i>  or <a href = "https://granadahigh.livermoreschools.org/">Go To My School</a></p>
+        <p class="copyright-text">Created By Kori, <a href="mailto:koribui7@gmail.com">Contact Me  </a> <i class="bi bi-envelope"></i>  or <a href="https://granadahigh.livermoreschools.org/">Go To My School</a></p>
         <p class="copyright-text">&copy; 2026 Me. Imitation is the highest form of flattery, but copying my code is just lazy.</p>
       </div>
     </div>
@@ -77,6 +86,16 @@
 
 
 
+ <script>
+    
+    const images = [
+  "https://www.trafalgar.com/real-word/wp-content/uploads//2018/01/Tokyo-Skyline-www.istockphoto.com_gb_photo_tokyo-japan-city-skyline-gm504317383-44289846-SeanPavonePhoto.jpg", 
+  "https://cdn.wallpapersafari.com/14/61/IKb4e0.jpg", 
+  "https://wallpaperaccess.com/full/1089986.jpg"  
+];
+const randomImage = images[Math.floor(Math.random() * images.length)];
+document.querySelector(".parallax").style.backgroundImage = `url('${randomImage}')`;
 
+  </script>
 </body>
 </html>
