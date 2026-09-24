@@ -34,6 +34,25 @@
   --nav-hover-bg: #2563eb;
   --nav-hover-text: #ffffff;
 }
+.bio-background-section{
+    background-image: url('https://codehs.com/uploads/63d28bb3f911827c1bb5a41a0c9aaad2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    
+}
+.floating-bio-card{
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-top: 700px;
+    margin-bottom: 1000px;
+    
+}
 h1{
     font-style: italic;
 }
