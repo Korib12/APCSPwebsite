@@ -1,10 +1,46 @@
+/* 1. DEFINE COLOR VARIABLES */
+:root {
+  /* Light Theme Defaults */
+  --bg-primary: #FBF9F6;
+  --bg-card: #f0f0f0;
+  --bg-card-gradient-start: #f3f3f3;
+  --bg-card-gradient-end: #ffffff;
+  --text-main: #1b365d;
+  --text-muted: #333333;
+  --text-heading: #FFFFFF;
+  --nav-bg: linear-gradient(135deg, #b3d9ff, #e6f2ff);
+  --border-color: #1e3a8a;
+  --accent-blue: #07b9ff;
+  --accent-hover: #7fb5ff;
+  --nav-text: #000000;
+  --nav-hover-bg: #7fb5ff;
+  --nav-hover-text: #ffffff;
+}
+
+/* 2. DARK MODE OVERRIDES */
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-card: #1e1e1e;
+  --bg-card-gradient-start: #2a2a2a;
+  --bg-card-gradient-end: #1e1e1e;
+  --text-main: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --text-heading: #ffffff;
+  --nav-bg: linear-gradient(135deg, #0f172a, #1e293b);
+  --border-color: #3b82f6;
+  --accent-blue: #38bdf8;
+  --accent-hover: #2563eb;
+  --nav-text: #e0e0e0;
+  --nav-hover-bg: #2563eb;
+  --nav-hover-text: #ffffff;
+}
 h1{
     font-style: italic;
 }
 hr {
   border: 0;
-  border-top: 1px solid #1e3a8a; 
-  margin: 20px 0;                
+  border-top: 1px solid var(--border-color); 
+  margin: 20px 0;                  
 }
 .card-grid {
   /* This creates columns that dynamically multiply and scale to fill any screen */
@@ -30,16 +66,15 @@ hr {
 
 .card {
   padding-top: 50px;
-  /* border-radius: 10px; */
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid var(--border-color);
   transform-style: preserve-3d;
-  background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
-      repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%);
+  background: linear-gradient(135deg, #0000 18.75%, var(--bg-card-gradient-start) 0 31.25%, #0000 0),
+              repeating-linear-gradient(45deg, var(--bg-card-gradient-start) -6.25% 6.25%, var(--bg-card-gradient-end) 0 18.75%);
   background-size: 60px 60px;
   background-position: 0 0, 0 0;
-  background-color: #f0f0f0;
+  background-color: var(--bg-card);
   width: 100%;
-  box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 30px -10px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -212,9 +247,15 @@ hr {
 }
 
 .myNav.soft-blue-gradient {
-  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
-  background-color: #b3d9ff; 
- 
+  background-image: var(--nav-bg);
+  padding: 20px 0;           
+           
+}
+.bottom-footer {
+  background-image: var(--nav-bg);
+  padding: 20px 0; 
+  margin-top: 40px;
+           
 }
 .parallax_bio h1,
 .parallax_projects h1{
@@ -237,7 +278,8 @@ hr {
 }
 .myNav.navbar-inverse .navbar-brand,
 .myNav.navbar-inverse .navbar-nav > li > a {
-    color: #000000;
+    color: var(--nav-text) !important;
+    transition: color 0.3s ease;
 }
 .parallax h3{
     color:#FFFFFF;
@@ -247,11 +289,11 @@ hr {
   font-weight: 400;  
 } 
 .parrallax_bio h3,
-.parralax_projects h3{
-color: #1b365d;
+.parralax_projects h3 {
+  color: var(--text-main);
   font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
   margin-top: 0.5rem; 
-  padding-left:50px;
+  padding-left: 50px;
   font-weight: 400;    
 }
 
@@ -282,12 +324,7 @@ color: #1b365d;
   
 }
 
-.bottom-footer {
-  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
-  background-color: #b3d9ff;  
-  padding: 20px 0;           
-  margin-top: 40px;         
-}
+
 .parallax_bio {
   /* The image used */
   background-image: url("https://img.magnific.com/free-photo/blue-stationery-table_23-2148169490.jpg?semt=ais_hybrid&w=740&q=80");
@@ -302,12 +339,7 @@ color: #1b365d;
   background-size: cover;
   
 }
-.bottom-footer {
-  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
-  background-color: #b3d9ff;  
-  padding: 20px 0;           
-  margin-top: 40px;         
-}
+
 .parallax_projects {
   /* The image used */
   background-image: url("https://t3.ftcdn.net/jpg/04/74/49/80/360_F_474498018_agehf1VrGjAjlUvH938wXYT1NQ2VVkBL.jpg");
@@ -322,12 +354,7 @@ color: #1b365d;
   background-size: cover;
   
 }
-.bottom-footer {
-  background-image: linear-gradient(135deg, #b3d9ff, #e6f2ff);
-  background-color: #b3d9ff;  
-  padding: 20px 0;           
-  margin-top: 40px;         
-}
+
 
 .myNav.navbar-inverse .navbar-nav > li > a:hover,
 .myNav.navbar-inverse .navbar-nav > .open > a,
@@ -343,12 +370,12 @@ color: #1b365d;
 .myNav .dropdown-menu {
     background-color: #b3d9ff !important;
 }
-body{
-    background-color: #FBF9F6 
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.body p{
-    
-}
+
 /* Target screens smaller than or equal to 768px (Mobile/Tablets) */
 @media screen and (width <= 768px) {
   body {
@@ -356,10 +383,10 @@ body{
   }
 }
 
-/* Target screens larger than or equal to 1024px (Desktops) */
-@media screen and (width >= 1024px) {
-  .container {
-    width: 80%;
+/* Target screens smaller than or equal to 768px (Mobile/Tablets) */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: var(--bg-primary); /* Keeps theme variable on mobile */
   }
 }
 
