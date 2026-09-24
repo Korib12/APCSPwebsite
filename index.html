@@ -40,7 +40,13 @@
           </ul>
         </li>
         <li><a href="projects.html"><i class ="bi-briefcase"></i> Projects</a></li>
-        
+        <ul class="nav navbar-nav navbar-right" style="padding-top: 8px; padding-right: 15px;">
+        <li style ="padding-left:20px;">
+          <button id="theme-toggle" class="bubbles" style="padding: 4px 12px;  font-size: 14px;">
+            <span class="text"><i class="bi bi-moon-fill"></i> Theme</span>
+          </button>
+        </li>
+      </ul>
       
       
 
@@ -64,7 +70,7 @@
         </div> 
         
         <div style="flex: 2 1 350px; padding: 15px 30px;"> 
-          <h4 style="margin-top: 0; margin-bottom: 15px; font-weight: bold; font-size: 24px;">Kori Bui</h4> 
+          <h4 style="margin-top: 0; margin-bottom: 15px; font-weight: bold; font-size: 24px;"><span title="SECRET: YOU FOUND IT! GO TO THIS WEBSITE: https://tinyurl.com/54xm8kkp" style="border-bottom: 1px dashed #999; cursor: help;">Kori Bui</span></h4> 
           <p style= "line-height: 1.8;">This is all about me.</p> 
         </div> 
         
@@ -95,7 +101,26 @@
 ];
 const randomImage = images[Math.floor(Math.random() * images.length)];
 document.querySelector(".parallax").style.backgroundImage = `url('${randomImage}')`;
+const toggleBtn = document.getElementById('theme-toggle');
 
+  // Load saved theme preference, or fall back to system preference
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  } else if (systemPrefersDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  // Toggle theme on click and persist choice
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
   </script>
 </body>
 </html>
