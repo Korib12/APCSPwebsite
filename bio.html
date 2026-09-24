@@ -11,20 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  /* Keeps the floating border strictly limited to the parallax section container */
-  .parallax_bio {
-    position: relative; 
-  }
 
-  /* Creates the floating outline inside your picture */
-  .parallax-frame {
-    position: absolute;
-    inset: 24px;              /* Pulls the box 24px away from the image edges */
-    border: 15px solid #ffffff; /* Thickness of the white line */
-    border-radius: 25px;       /* Rounds the corners */
-    box-sizing: border-box; 
-    pointer-events: none;      /* Prevents the border layer from blocking mouse clicks */
-  }
   body {
     font-family: 'Poppins', sans-serif;
     
@@ -72,96 +59,90 @@
     </div>
   </div>
 </nav>
-<div class="parallax_bio">
-     <div class="parallax-frame">
-        <h1>ALL ABOUT ME!</h1>
-        
-    </div>
-    </div> 
-<div class="container" style="margin-top: 50px; margin-bottom: 200px;">
-    <!-- Section Title -->
-    <div class="row" style="margin-bottom: 30px;">
-        <div class="col-xs-12">
-            <h2 style="color: #1b365d; border-bottom: 2px solid #b3d9ff; padding-bottom: 10px;">My Bio</h2>
-        </div>
-    </div>
 
-    <!-- Two Column Information Layout -->
-    <div class="row">
-        <!-- Left Column -->
-        <div class="col-sm-6" style="margin-bottom: 20px;">
-            <h3 style="color: #1b365d; margin-top: 0;">My Background</h3>
-             <div class="content-col">
-            <h1>Kori Bui</h1>
-            <p class="taglines">Keep • On • Going</p>
+<div class="bio-background-section" >
+    <div class="container">
+        
+        
+        <div class="floating-bio-card">
             
-            <div class="intro-text">
-                <p>Hi, I’m Kori! My journey started in Ames, Iowa, took a detour through Pennsylvania, and finally landed me in sunny California.</p>
-                <p>How did I get my name? I was actually expected to arrive while my parents were in South Korea. To avoid any international copyright infringement, they legally dropped the "a"—and thus, Kori was born.</p>
+            <!-- Section Title -->
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-xs-12">
+                    <h2 style="color: #1b365d; border-bottom: 2px solid #b3d9ff; padding-bottom: 10px; margin-top: 0;">My Bio</h2>
+                </div>
             </div>
 
-            <h2>What I Do</h2>
-            <ul>
-                <li>I’m a dedicated competitive volleyball player. When I’m not dominating the court for my school team, you can find me diving for saves in the sand. Beach volleyball has my whole heart (and most of the sand in my shoes).</li>
-                <li> By day, I hold things down at Target, mastering the art of guest services and logistics. If you need to know which aisle has the best items, I'm your person.</li>
-                <li> When the jersey comes off and the shift ends, I’m usually out shopping, exploring new style trends, or hanging out with my friends.</li>
-            </ul>
-
-            <h2>A little Bit More:</h2>
-            <p style="margin-bottom: 15px; color: #555;">Every great athlete and retail professional needs a rigorous training diet. Mine is strictly curated around premium gastronomy, including:</p>
-            <ul>
-                <li><strong>The Papa Johns Special:</strong> Mushroom and bacon pizza, completely submerged in garlic sauce.</li>
-                <li><strong>The Ice Cream Peak:</strong> Ben & Jerry’s Half Baked, or—strictly speaking—just the crunchy top layer of a Dirt Cake pint.</li>
-                <li><strong>The Gourmet Dessert:</strong> Crumbl’s Dubai Chocolate Brownie (a culinary masterpiece).</li>
-                <li><strong>The Target Power Lunch:</strong> A tactical combination of Rainbow Goldfish and Applesauce Crushers.</li>
-            </ul>
-
-            
-        </div>
-
-        </div>
-        
-        <!-- Right Column -->
-        <div class="col-sm-6" style="margin-bottom: 20px;">
+            <!-- Two Column Information Layout -->
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-sm-6" style="margin-bottom: 20px;">
+                    <h3 style="color: #1b365d; margin-top: 0;">My Background</h3>
+                    <div class="content-col">
+                        <h1 style="color: #1b365d; font-weight: 700; margin-top: 10px;">Kori Bui</h1>
+                        <p class="taglines" style="font-style: italic; color: #555; margin-bottom: 20px;">Keep • On • Going</p>
                         
-            <h2>Beyond the Clock</h2>
-            <div class="modern-list-grid" style="margin-bottom: 20px;">
+                        <div class="intro-text" style="line-height: 1.6; color: #333;">
+                            <p>Hi, I’m Kori! My journey started in Ames, Iowa, took a detour through Pennsylvania, and finally landed me in sunny California.</p>
+                            <p>How did I get my name? I was actually expected to arrive while my parents were in South Korea. To avoid any international copyright infringement, they legally dropped the "a"—and thus, Kori was born.</p>
+                        </div>
+
+                        <h2 style="color: #1b365d; font-size: 22px; margin-top: 30px;">What I Do</h2>
+                        <ul style="padding-left: 20px; line-height: 1.6; color: #333;">
+                            <li style="margin-bottom: 10px;">I’m a dedicated competitive volleyball player. When I’m not dominating the court for my school team, you can find me diving for saves in the sand. Beach volleyball has my whole heart (and most of the sand in my shoes).</li>
+                            <li style="margin-bottom: 10px;">By day, I hold things down at Target, mastering the art of guest services and logistics. If you need to know which aisle has the best items, I'm your person.</li>
+                            <li style="margin-bottom: 10px;">When the jersey comes off and the shift ends, I’m usually out shopping, exploring new style trends, or hanging out with my friends.</li>
+                        </ul>
+
+                        <h2 style="color: #1b365d; font-size: 22px; margin-top: 30px;">A little Bit More:</h2>
+                        <p style="margin-bottom: 15px; color: #555;">Every great athlete and retail professional needs a rigorous training diet. Mine is strictly curated around premium gastronomy, including:</p>
+                        <ul style="padding-left: 20px; line-height: 1.6; color: #333;">
+                            <li style="margin-bottom: 5px;"><strong>The Papa Johns Special:</strong> Mushroom and bacon pizza, completely submerged in garlic sauce.</li>
+                            <li style="margin-bottom: 5px;"><strong>The Ice Cream Peak:</strong> Ben & Jerry’s Half Baked, or—strictly speaking—just the crunchy top layer of a Dirt Cake pint.</li>
+                            <li style="margin-bottom: 5px;"><strong>The Gourmet Dessert:</strong> Crumbl’s Dubai Chocolate Brownie (a culinary masterpiece).</li>
+                            <li style="margin-bottom: 5px;"><strong>The Target Power Lunch:</strong> A tactical combination of Rainbow Goldfish and Applesauce Crushers.</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <div class="info-card interest-card">
-                    
-                    <strong>Shopping!!!</strong>
-                    <p>I have an Olympic-level talent for shopping. Whether I'm hunting for the perfect outfit or browsing target clearance aisles on my day off, I consider it high-cardio training.</p>
-                </div>
+                <!-- Right Column -->
+                <div class="col-sm-6" style="margin-bottom: 20px;">
+                    <h2 style="color: #1b365d; font-size: 22px; margin-top: 0; margin-bottom: 20px;">Beyond the Clock</h2>
+                    <div class="modern-list-grid" style="margin-bottom: 20px;">
+                        
+                        <div class="info-card interest-card" style="background: #f9fbfd; border: 1px solid #e1edf7; padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                            <strong style="color: #1b365d; font-size: 16px;">Shopping!!!</strong>
+                            <p style="margin-top: 5px; color: #444; line-height: 1.5;">I have an Olympic-level talent for shopping. Whether I'm hunting for the perfect outfit or browsing target clearance aisles on my day off, I consider it high-cardio training.</p>
+                        </div>
 
-                <div class="info-card interest-card">
-                    
-                    <strong>My People</strong>
-                    <p>When I'm not busy, I'm hanging out with my friends. I am the designated aux-cord DJ for road trips and the friend who will always convince you that you *do* need to buy that item.</p>
-                </div>
+                        <div class="info-card interest-card" style="background: #f9fbfd; border: 1px solid #e1edf7; padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                            <strong style="color: #1b365d; font-size: 16px;">My People</strong>
+                            <p style="margin-top: 5px; color: #444; line-height: 1.5;">When I'm not busy, I'm hanging out with my friends. I am the designated aux-cord DJ for road trips and the friend who will always convince you that you *do* need to buy that item.</p>
+                        </div>
 
-                <div class="info-card interest-card">
-                    
-                    <strong>Music</strong>
-                    <p>My headphone history is total chaos. I jump seamlessly from intense murder mystery podcasts straight into high-energy beach pop music to pump me up for volleyball matches.</p>
-                </div>
+                        <div class="info-card interest-card" style="background: #f9fbfd; border: 1px solid #e1edf7; padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                            <strong style="color: #1b365d; font-size: 16px;">Music</strong>
+                            <p style="margin-top: 5px; color: #444; line-height: 1.5;">My headphone history is total chaos. I jump seamlessly from intense murder mystery podcasts straight into high-energy beach pop music to pump me up for volleyball matches.</p>
+                        </div>
 
-                <div class="info-card interest-card">
-                    
-                    <strong>Places I've Been</strong>
-                    <p>Having lived in Iowa, Pennsylvania, and California, I’m a collector of landscapes. I've survived midwest winters, east coast rain, and now I'm fully embracing the west coast sunshine.</p>
+                        <div class="info-card interest-card" style="background: #f9fbfd; border: 1px solid #e1edf7; padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                            <strong style="color: #1b365d; font-size: 16px;">Places I've Been</strong>
+                            <p style="margin-top: 5px; color: #444; line-height: 1.5;">Having lived in Iowa, Pennsylvania, and California, I’m a collector of landscapes. I've survived midwest winters, east coast rain, and now I'm fully embracing the west coast sunshine.</p>
+                        </div>
+                        
+                        <!-- Interests Section Bottom Image -->
+                        <div class="interests-image-wrapper" style="margin-top: 25px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <img src="https://stuffinla.com/wp-content/uploads/2017/02/49271155788_a6fb39713d_k.jpg" class="interests-bottom-img" style="width: 100%; height: auto; display: block;">
+                        </div>
+
+                    </div>
                 </div>
-                <!-- Interests Section Bottom Image -->
-            <div class="interests-image-wrapper">
-                <img src="https://stuffinla.com/wp-content/uploads/2017/02/49271155788_a6fb39713d_k.jpg"  class="interests-bottom-img">
             </div>
-
-
-            </div>
-            
 
         </div>
     </div>
 </div>
+
 
 <footer class="bottom-footer">
   <div class="container">
