@@ -42,6 +42,10 @@
     background-attachment: scroll;
     padding-top: 60px;
     padding-bottom: 80px;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     
 }
 .floating-bio-card{
@@ -49,8 +53,8 @@
     border-radius: 24px;
     padding: 40px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    margin-top: 700px;
-    margin-bottom: 1000px;
+    margin-top: 350px;
+    margin-bottom: 700px;
     
 }
 h1{
