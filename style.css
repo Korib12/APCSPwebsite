@@ -1,4 +1,4 @@
-/* 1. DEFINE COLOR VARIABLES */
+
 :root {
   /* Light Theme Defaults */
   --bg-primary: #FBF9F6;
@@ -336,14 +336,7 @@ hr {
   /* The image used */
   background-image: url("https://www.trafalgar.com/real-word/wp-content/uploads//2018/01/Tokyo-Skyline-www.istockphoto.com_gb_photo_tokyo-japan-city-skyline-gm504317383-44289846-SeanPavonePhoto.jpg");
 
-  /* Set a specific height */
-  min-height: 800px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
   
 }
 
@@ -352,14 +345,7 @@ hr {
   /* The image used */
   background-image: url("https://img.magnific.com/free-photo/blue-stationery-table_23-2148169490.jpg?semt=ais_hybrid&w=740&q=80");
 
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax  effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   
 }
 
@@ -367,17 +353,40 @@ hr {
   /* The image used */
   background-image: url("https://t3.ftcdn.net/jpg/04/74/49/80/360_F_474498018_agehf1VrGjAjlUvH938wXYT1NQ2VVkBL.jpg");
 
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax  effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   
 }
 
+.parallax,
+.parallax_bio,
+.parallax_projects {
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Desktop parallax */
+}
+
+.parallax {
+  min-height: 800px;
+}
+
+
+@media screen and (max-width: 768px), (hover: none) {
+  .parallax,
+  .parallax_bio,
+  .parallax_projects {
+    /* Disable fixed background attachment on mobile to stop stretching & blur */
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+  
+  /* Slightly reduce section heights on mobile so images fit nicely */
+  .parallax {
+    min-height: 500px;
+  }
+}
 
 .myNav.navbar-inverse .navbar-nav > li > a:hover,
 .myNav.navbar-inverse .navbar-nav > .open > a,
@@ -399,12 +408,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Target screens smaller than or equal to 768px (Mobile/Tablets) */
-@media screen and (width <= 768px) {
-  body {
-    background-color: lightgray;
-  }
-}
+
 
 /* Target screens smaller than or equal to 768px (Mobile/Tablets) */
 @media screen and (max-width: 768px) {
